@@ -1,0 +1,137 @@
+#signup {
+  max-width: 40em;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+@media screen and (max-width: 767px) {
+  #signup {
+    max-width: 25em;
+  }
+}
+
+#signup {
+  color: white;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+    0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  background-color: #06191d;
+  margin: 5em;
+  padding: 2em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 17px;
+}
+#header-row > .ui.inverted.header {
+  padding-bottom: 0.6em;
+}
+input[type='date'] {
+  -webkit-align-items: center;
+  display: -webkit-inline-flex;
+  font-family: monospace;
+  overflow: hidden;
+  padding: 0;
+  -webkit-padding-start: 1px;
+}
+
+input::-webkit-datetime-edit {
+  -webkit-flex: 1;
+  -webkit-user-modify: read-only !important;
+  display: inline-block;
+  min-width: 0;
+  overflow: hidden;
+}
+input::-webkit-datetime-edit-fields-wrapper {
+  -webkit-user-modify: read-only !important;
+  display: inline-block;
+  padding: 1px 0;
+  white-space: pre;
+}
+
+/* If you update padding, border, or margin in the following ruleset, update
+     DateTimeFieldElement::maximumWidth too. */
+input::-webkit-datetime-edit-ampm-field,
+input::-webkit-datetime-edit-day-field,
+input::-webkit-datetime-edit-hour-field,
+input::-webkit-datetime-edit-millisecond-field,
+input::-webkit-datetime-edit-minute-field,
+input::-webkit-datetime-edit-month-field,
+input::-webkit-datetime-edit-second-field,
+input::-webkit-datetime-edit-week-field,
+input::-webkit-datetime-edit-year-field {
+  -webkit-user-modify: read-only !important;
+  border: none;
+  display: inline;
+  font: inherit !important;
+  padding: 1px;
+}
+
+/* Remove focus ring from fields and use highlight color */
+input::-webkit-datetime-edit-ampm-field:focus,
+input::-webkit-datetime-edit-day-field:focus,
+input::-webkit-datetime-edit-hour-field:focus,
+input::-webkit-datetime-edit-millisecond-field:focus,
+input::-webkit-datetime-edit-minute-field:focus,
+input::-webkit-datetime-edit-month-field:focus,
+input::-webkit-datetime-edit-second-field:focus,
+input::-webkit-datetime-edit-week-field:focus,
+input::-webkit-datetime-edit-year-field:focus {
+  background-color: highlight;
+  color: highlighttext;
+  outline: none;
+}
+
+input::-webkit-datetime-edit-year-field[disabled],
+input::-webkit-datetime-edit-month-field[disabled],
+input::-webkit-datetime-edit-week-field[disabled],
+input::-webkit-datetime-edit-day-field[disabled],
+input::-webkit-datetime-edit-ampm-field[disabled],
+input::-webkit-datetime-edit-hour-field[disabled],
+input::-webkit-datetime-edit-millisecond-field[disabled],
+input::-webkit-datetime-edit-minute-field[disabled],
+input::-webkit-datetime-edit-second-field[disabled] {
+  color: GrayText;
+}
+
+/* If you update padding, border, or margin in the following ruleset, update
+     DateTimeEditElement::customStyelForRenderer too. */
+input::-webkit-datetime-edit-text {
+  -webkit-user-modify: read-only !important;
+  display: inline;
+  font: inherit !important;
+}
+
+input[type='date']::-webkit-inner-spin-button,
+input[type='datetime']::-webkit-inner-spin-button,
+input[type='datetime-local']::-webkit-inner-spin-button,
+input[type='month']::-webkit-inner-spin-button,
+input[type='time']::-webkit-inner-spin-button,
+input[type='week']::-webkit-inner-spin-button {
+  display: inline-block;
+  position: static;
+  -webkit-margin-start: 2px;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: inner-spin-button;
+  display: block;
+  position: relative;
+  cursor: default;
+  /* This height property is ignored for input type "number" and others which
+       * use RenderTextControlSingleLine as renderer which sets height of spin
+       * button in layout(). */
+  height: 1.5em;
+  vertical-align: top;
+  -webkit-flex: none;
+  -webkit-user-select: none;
+  -webkit-user-modify: read-only !important;
+}
+input::-webkit-calendar-picker-indicator {
+  display: inline-block;
+  width: 0.66em;
+  height: 0.66em;
+  padding: 0.17em 0.34em;
+  -webkit-user-modify: read-only !important;
+}
+
+input::-webkit-calendar-picker-indicator:hover {
+  background-color: #eee;
+}

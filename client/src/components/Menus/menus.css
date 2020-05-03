@@ -1,0 +1,145 @@
+.main-menu.ui.menu.fixed {
+  background-color: #000000;
+}
+.mainMenu-link {
+  color: white;
+  font-family: 'Roboto';
+}
+.mainMenu-link:hover {
+  color: #efca08 !important;
+}
+.ui.menu:not(.vertical) .item > .button.login-button {
+  margin-right: 0.5em;
+  border-color: white;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.ui.avatar.image.user-menu {
+  margin-right: 0.5em;
+}
+#drop-options {
+  position: absolute;
+  top: 2.2em;
+  left: 0.8em;
+}
+.ui.header.profile-header {
+  display: inline;
+}
+@media (min-width: 320px) and (max-width: 599px) {
+  #notif-options {
+    position: absolute;
+    top: 0.6em;
+    right: -3em;
+  }
+  #notif-menu {
+    max-height: 10em;
+    min-width: 5px !important;
+    overflow-y: scroll;
+  }
+}
+
+@media (min-width: 769px) {
+  #notif-options {
+    position: absolute;
+    top: 0.6em;
+    right: -0.5em;
+  }
+  #notif-menu {
+    max-height: 10em;
+    min-width: 20em;
+    overflow-y: scroll;
+  }
+}
+
+#mark {
+  float: right;
+  text-transform: none;
+  font-style: normal;
+  font-size: 0.8em;
+  color: #1877f2;
+  cursor: pointer;
+}
+#item {
+  font-style: normal;
+}
+@media (max-width: 768px) and (min-width: 600px) {
+  #notif-menu {
+    max-height: 10em;
+    min-width: 15em;
+    overflow-y: scroll;
+  }
+  #notif-options {
+    position: absolute;
+    top: 0.6em;
+    right: -0.5em;
+  }
+}
+
+#no-back {
+  background-color: white !important;
+  transform: none;
+  margin: 0 !important;
+}
+#blue-back {
+  background-color: #ecf3ff !important;
+  transform: none;
+  margin: 0 !important;
+}
+@media (max-width: 767px) {
+  #notif-menu {
+    width: 100vw;
+    max-height: 50vh;
+  }
+  #notif-menu #no-back:nth-child(3) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100vw;
+  }
+  #no-back #item {
+    width: 100vw;
+    margin-left: 5px;
+  }
+}
+#notification-font {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.centered-Menu-item {
+  text-align: center;
+}

@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.homepage-background {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://mnhealthycommunities.org/wp-content/uploads/2017/02/iStock-619636894.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.homepage-background-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.homepage-background form {
+  width: 30%;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border-radius: 0.28571429rem;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  padding: 20px;
+  margin: auto;
+}
+
+.homepage-background h1 {
+  margin: 0;
+  font-size: 80px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.homepage-background h3 {
+  font-size: 25px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@media screen and (max-width: 1023px) {
+  .homepage-background {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .homepage-background-text {
+    width: 70%;
+  }
+  .homepage-background form {
+    width: 50%;
+    margin: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homepage-background h1 {
+    font-size: 40px;
+  }
+
+  .homepage-background h3 {
+    font-size: 15px;
+  }
+
+  .homepage-background form {
+    width: 70%;
+  }
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 194px;
+  background-color: #e5e8e8;
+  overflow-x: hidden;
+}
+.ui.dimmer {
+  height: 100vh !important;
+  position: fixed !important;
+  top: 0 !important;
+}
+
+.app-container {
+  margin-top: 4.1em;
+}
+
+.element::-webkit-scrollbar {
+  width: 0 !important;
+}
+.element {
+  -ms-overflow-style: none;
+}
+.element {
+  overflow: -moz-scrollbars-none;
+}

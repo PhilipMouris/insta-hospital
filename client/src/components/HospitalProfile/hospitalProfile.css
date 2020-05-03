@@ -1,0 +1,119 @@
+.error-message {
+  max-width: 50%;
+  margin-left: 25% !important;
+}
+.partner-container {
+  margin-top: 1em !important;
+}
+@media (max-width: 767px) {
+  #mobile-padding {
+    padding: 1em;
+  }
+}
+.partner-info-container {
+  padding-top: 30px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.partner-info-container .column {
+  font-size: 18px !important;
+}
+#action-icon {
+  float: right;
+}
+@media (min-width: 1024px) {
+  #action-segment {
+    margin: 1em !important;
+    top: 19em !important;
+    width: 90%;
+    position: absolute;
+  }
+  #member-actions {
+    margin: 1em !important;
+    top: 20.5em !important;
+    width: 90%;
+    position: absolute;
+  }
+}
+.ui.header.click {
+  cursor: pointer;
+}
+.ui.header.click:hover {
+  color: blue !important;
+}
+
+@media (min-width: 1366px) {
+  #vacancy-segment {
+    max-width: 80%;
+    margin-left: 9.5%;
+  }
+}
+.modal-header {
+  background-color: #06191d !important ;
+  color: white !important;
+}
+#workaround:before {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+#workaround:after {
+  border-color: #767676 transparent transparent;
+}
+.ui.header.no-margin {
+  margin-bottom: -1.2em !important;
+}
+#action-header {
+  margin-bottom: 0.3em;
+  margin-left: 4em;
+}
+#comment:hover {
+  background-color: #f2f2f2;
+}
+.profile-image {
+  /*Image should be a div*/
+  height: 13em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 10em;
+}
+.joinDate {
+  /*Image should be a div*/
+  height: 11.5em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 10em;
+}
+#avatar {
+  height: 3em;
+  width: 3em;
+}
+
+.highlight-font-green {
+  color: green;
+  background: none;
+}
+.highlight-font {
+  background: none;
+  color: blue;
+}
+
+#card-container {
+  max-height: 25em;
+  overflow: auto;
+}
+
+#card {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 300px;
+}
+
+.error {
+  color: red !important;
+}

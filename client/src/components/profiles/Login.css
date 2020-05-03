@@ -1,0 +1,25 @@
+#header-cont {
+  background-image: linear-gradient(to right top, #06191d, #091f23, #0b2529,
+    #0c2b30, #0e3136, #102f37, #142c37, #182a36, #1b202a,
+    #19161d, #120d10, #000000);
+   height: 20%;
+   text-align: center;
+ }
+ #header {
+   padding-top : 2.2vh !important;
+ }
+ #login-form {
+   background-color: #f2f2f2;
+   padding:2em;
+ }
+ #forgot {
+   cursor: pointer;
+   color:blue;
+ }
+ #workaround:before {
+   border-color: rgba(0,0,0,.1);
+ }
+
+  #workaround:after {
+   border-color: #0000 transparent transparent;
+ }

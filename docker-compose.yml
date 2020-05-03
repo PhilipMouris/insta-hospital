@@ -1,0 +1,34 @@
+version: '3.7'
+services:
+  db:
+    image: postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+  frontend:
+    container_name: web
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    image: philip/web
+    ports:
+      - '3001:3001'
+    volumes:
+      - ./client:/usr/src/app
+      - /usr/src/app/node_modules
+    network_mode: 'host'
+  backend:
+    container_name: api
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    image: philip/api
+    depends_on:
+      - db
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./server:/usr/src/app
+      - /usr/src/app/node_modules
+    network_mode: 'host'

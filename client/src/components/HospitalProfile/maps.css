@@ -1,0 +1,25 @@
+.gmnoprint {
+  width: auto !important;
+}
+
+.gmnoprint div {
+  width: auto;
+}
+
+#map-segment {
+  height: 40em;
+  width: 74%;
+  margin: auto;
+}
+
+#map-segment-mobile {
+  height: 40em;
+  width: 100%;
+  margin: auto;
+}
+
+#map-segment-tablet {
+  height: 40em;
+  width: 48em;
+  margin: auto;
+}
